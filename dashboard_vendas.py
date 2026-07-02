@@ -15,7 +15,7 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    df_vendas = pd.read_csv('/mount/src/projeto-vendas/relacao_vendedores_junho.csv', sep=';')
+    df_vendas = pd.read_csv('/mount/src/projeto-vendas/relacao_vendedores_junho.csv', sep=';', encoding='latin-1')
     df_produtos = pd.read_excel('/mount/src/projeto-vendas/vendas_por_produto.xlsx')
     
     df_vendas['Data da Venda'] = pd.to_datetime(df_vendas['Data da Venda'], format='%d/%m/%Y')
