@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.set_page_config(page_title="Aurora Vendas", layout="wide")
+st.set_page_config(page_title="Vendas", layout="wide")
 
 @st.cache_data
 def load_data():
